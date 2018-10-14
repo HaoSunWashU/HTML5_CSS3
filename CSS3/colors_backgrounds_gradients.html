@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Colors, Backgrounds & Gradients</title>
+	<style type="text/css">
+		#rounded1{
+			background:rgba(255,0,0,0.3); 
+			color:white;
+			width:200px;
+			height:200px;
+			padding:30px;
+			border-radius: 10px;
+			/*border-radius: 50%;*/
+		}
+
+		#rounded2{
+			background:hsl(120,100%,50%);
+			color:white;
+			width:200px;
+			height:200px;
+			padding:30px;
+			border-top-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+
+		#rounded3{
+			background:red;
+			color:white;
+			width:200px;
+			height:200px;
+			padding:30px;
+			border: 3px black solid;
+			border-radius: 50%;
+		}
+
+		img{
+			border-radius: 25px;
+
+		}
+
+		#border-img{
+			border:10px solid transparent;
+			padding: 15px;
+			border-image: url(border.png) 30 round;
+		}
+
+		#my-bg{
+			background-image: url('img_flwr.gif'), url(paper.gif);
+			background-position: right bottom, left top;
+			background-repeat: no-repeat, repeat;
+			padding: 15px 200px 15px 15px;
+			background-size: 100px 100px;
+		}
+
+		#grad1{
+			width:500px;
+			height:200px;
+			background:blue;
+			background: linear-gradient(blue, black, white);
+		}
+
+		#grad2{
+			width:500px;
+			height:200px;
+			background:blue;
+			background: linear-gradient(to right, blue, white);
+		}
+
+		#grad3{
+			width:500px;
+			height:200px;
+			background:blue;
+			background: linear-gradient(to bottom right, black, white);
+		}
+
+		#grad4{
+			width:500px;
+			height:200px;
+			background:blue;
+			/*background: radial-gradient(blue 5%, white 15%, black 30%);*/
+			background: radial-gradient(white, yellow, green, blue, purple, pink, red);
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<div id="rounded1">Rounded Corners</div>
+	<br>
+	<div id="rounded2">Rounded Corners</div>
+	<br>
+	<div id="rounded3">Rounded Corners</div>
+	<br>
+	<img src="bird.jpg">
+	<br>
+	<div id="border-img">THis is border image div</div>
+	<br>
+	<div id='my-bg'>
+		<h1>Welcome</h1>
+		<p>This is a paragraph</p>
+		<p>This is another paragraph</p>	
+	</div>
+	<br>
+	<div id="grad1"></div><br>
+	<div id="grad2"></div><br>
+	<div id="grad3"></div><br>
+	<div id="grad4"></div><br>
+</body>
+</html>
